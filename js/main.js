@@ -343,7 +343,7 @@
               data: [446, 36,9],
               backgroundColor: [
                 '#00b5e9',
-                '#fa4251',
+                '#00ad5f',
                 '#ff0000'
               ],
               hoverBackgroundColor: [
