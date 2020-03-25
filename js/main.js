@@ -77,10 +77,10 @@
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['17th March', '18th March', '19th March', '20th March', '21st March', '22nd March', '23th March'],
+          labels: ['18th March', '19th March', '20th March', '21st March', '22nd March', '23th March','24th March'],
           type: 'line',
           datasets: [{
-            data: [6,14,15,47,60,73,95],
+            data: [14,15,47,60,73,95,88],
             label: 'Dataset',
             backgroundColor: 'transparent',
             borderColor: 'rgba(255,255,255,.55)',
@@ -252,16 +252,16 @@
     const brandProduct = 'rgba(0,181,233,0.8)'
     const brandService = 'rgba(0,173,95,0.8)'
 
-    var elements = 10
-    var data1 = [1,0,5,3,0,1,11]
-    var data2 = [6,14,15,47,60,73,95]
+    var elements = 8
+    var data1 = [1,0,5,3,0,1,11,4]
+    var data2 = [6,14,15,47,60,73,95,88]
     var ctx = document.getElementById("recent-rep-chart");
     if (ctx) {
       ctx.height = 250;
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['17th March', '18th March', '19th March', '20th March', '21st March', '22nd March', '23th March'],
+          labels: ['17th March', '18th March', '19th March', '20th March', '21st March', '22nd March', '23th March','24th March'],
           datasets: [
             {
               label: 'Infected',
