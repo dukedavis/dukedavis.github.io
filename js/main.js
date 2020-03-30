@@ -82,28 +82,24 @@
           datasets: [{
             data: [14,41,40,47,179,48,75],
             label: 'Active Dataset',
-            backgroundColor: 'transparent',
+            backgroundColor: 'rgba(255,255,255,.1)',
             borderColor: 'rgba(255,255,255,.55)',
           },]
         },
         options: {
-
-          maintainAspectRatio: false,
+          maintainAspectRatio: true,
           legend: {
             display: false
           },
-          responsive: true,
-          tooltips: {
-            mode: 'index',
-            titleFontSize: 12,
-            titleFontColor: '#000',
-            bodyFontColor: '#000',
-            backgroundColor: '#fff',
-            titleFontFamily: 'Montserrat',
-            bodyFontFamily: 'Montserrat',
-            cornerRadius: 3,
-            intersect: false,
+          layout: {
+            padding: {
+              left: 0,
+              right: 0,
+              top: 0,
+              bottom: 0
+            }
           },
+          responsive: true,
           scales: {
             xAxes: [{
               gridLines: {
@@ -127,11 +123,10 @@
           },
           elements: {
             line: {
-              tension: 0.00001,
-              borderWidth: 1
+              borderWidth: 0
             },
             point: {
-              radius: 4,
+              radius: 0,
               hitRadius: 10,
               hoverRadius: 4
             }
@@ -139,7 +134,6 @@
         }
       });
     }
-
 
     //WidgetChart 3
     var ctx = document.getElementById("widgetChart3");
@@ -152,29 +146,25 @@
           type: 'line',
           datasets: [{
             data: [2,0,24,13,7,13],
-            label: 'Dataset',
-            backgroundColor: 'transparent',
+            label: ' Cured Dataset',
+            backgroundColor: 'rgba(255,255,255,.1)',
             borderColor: 'rgba(255,255,255,.55)',
           },]
         },
         options: {
-
-          maintainAspectRatio: false,
+          maintainAspectRatio: true,
           legend: {
             display: false
           },
-          responsive: true,
-          tooltips: {
-            mode: 'index',
-            titleFontSize: 12,
-            titleFontColor: '#000',
-            bodyFontColor: '#000',
-            backgroundColor: '#fff',
-            titleFontFamily: 'Montserrat',
-            bodyFontFamily: 'Montserrat',
-            cornerRadius: 3,
-            intersect: false,
+          layout: {
+            padding: {
+              left: 0,
+              right: 0,
+              top: 0,
+              bottom: 0
+            }
           },
+          responsive: true,
           scales: {
             xAxes: [{
               gridLines: {
@@ -198,10 +188,10 @@
           },
           elements: {
             line: {
-              borderWidth: 1
+              borderWidth: 0
             },
             point: {
-              radius: 4,
+              radius: 0,
               hitRadius: 10,
               hoverRadius: 4
             }
@@ -218,7 +208,7 @@
       var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-        labels: ['24th March','25th March', '26th March', '27th March', '28st March', '29nd March', '30th March'],
+        labels: ['25th March', '26th March', '27th March', '28st March', '29nd March', '30th March'],
         datasets: [
             {
               label: "Death dataset",
