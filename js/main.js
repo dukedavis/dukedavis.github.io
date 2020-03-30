@@ -11,10 +11,10 @@
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['17th March', '18th March', '19th March', '20th March', '21st March', '22nd March', '23th March'],
+          labels: ['17th March', '18th March', '19th March', '20th March', '21st March', '22nd March', '23th March','30th March'],
           type: 'line',
           datasets: [{
-            data: [75, 40, 38, 28, 31, 37, 7],
+            data: [75, 40, 38, 28, 31, 37, 7,0],
             label: 'Change in Thousands',
             backgroundColor: 'rgba(255,255,255,.1)',
             borderColor: 'rgba(255,255,255,.55)',
@@ -77,11 +77,11 @@
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['18th March', '19th March', '20th March', '21st March', '22nd March', '23th March','24th March'],
+          labels: ['24th March','25th March', '26th March', '27th March', '28st March', '29nd March', '30th March'],
           type: 'line',
           datasets: [{
-            data: [14,15,47,60,73,95,88],
-            label: 'Dataset',
+            data: [14,41,40,47,179,48,75],
+            label: 'Active Dataset',
             backgroundColor: 'transparent',
             borderColor: 'rgba(255,255,255,.55)',
           },]
@@ -148,10 +148,10 @@
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['17th March', '18th March', '19th March', '20th March', '21st March', '22nd March', '23th March'],
+          labels: ['24th March','25th March', '26th March', '27th March', '28st March', '29nd March', '30th March'],
           type: 'line',
           datasets: [{
-            data: [1,0,5,3,0,1,11],
+            data: [2,0,24,13,7,13],
             label: 'Dataset',
             backgroundColor: 'transparent',
             borderColor: 'rgba(255,255,255,.55)',
@@ -218,11 +218,11 @@
       var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-        labels: ['17th March', '18th March', '19th March', '20th March', '21st March', '22nd March', '23th March'],
+        labels: ['24th March','25th March', '26th March', '27th March', '28st March', '29nd March', '30th March'],
         datasets: [
             {
               label: "Death dataset",
-              data: [1,0,1,0,0,3,2],
+              data: [1,3,4,2,6,4],
               borderColor: "transparent",
               borderWidth: "0",
               backgroundColor: "rgba(255,255,255,.3)"
@@ -252,16 +252,16 @@
     const brandProduct = 'rgba(0,181,233,0.8)'
     const brandService = 'rgba(0,173,95,0.8)'
 
-    var elements = 8
-    var data1 = [1,0,5,3,0,1,11,4]
-    var data2 = [6,14,15,47,60,73,95,88]
+    var elements = 7;
+    var data1 = [2,0,24,13,7,13];
+    var data2 = [14,41,40,47,179,48,75];
     var ctx = document.getElementById("recent-rep-chart");
     if (ctx) {
       ctx.height = 250;
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['17th March', '18th March', '19th March', '20th March', '21st March', '22nd March', '23th March','24th March'],
+          labels: ['24th March','25th March', '26th March', '27th March', '28st March', '29nd March', '30th March'],
           datasets: [
             {
               label: 'Infected',
@@ -339,8 +339,8 @@
         data: {
           datasets: [
             {
-              label: "My First dataset",
-              data: [446, 36,9],
+              label: "Pie Live dataset",
+              data: [942, 99,29],
               backgroundColor: [
                 '#00b5e9',
                 '#00ad5f',
